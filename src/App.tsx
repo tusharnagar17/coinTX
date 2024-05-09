@@ -1,14 +1,14 @@
-import React from 'react'
-import NavBar from './components/NavBar'
-import MainSection from './components/MainSection'
-import Footer from './components/Footer'
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
 
-const App = () => {
+function App() {
+
   return (
     <>
-      <NavBar />
-      <MainSection />
-      <Footer />
+     <div className=''>
+      <div>Tushar</div>
+     </div>
     </>
   )
 }
