@@ -1,16 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState } from "react";
+
+import { ModeToggle } from "./components/ModeToggle";
 
 function App() {
-
   return (
     <>
-     <div className=''>
-      <div>Tushar</div>
-     </div>
+      <div className="">
+        <div>Tushar</div>
+        <ModeToggle />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
