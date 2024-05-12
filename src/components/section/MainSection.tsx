@@ -34,7 +34,6 @@ export const MainSection = () => {
     specificCoinDetail();
     fetchData();
   }, [coin]);
-  console.log("specific coin", specificCoin);
 
   if (loading) {
     <div className="flex justify-center items-center">Loading...</div>;
