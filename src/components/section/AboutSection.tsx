@@ -1,5 +1,3 @@
-import React from "react";
-
 const AboutSection = () => {
   return (
     <div className="bg-white dark:bg-gray-900 rounded-xl px-8 py-4 my-4">

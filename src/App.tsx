@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-
 import NavBar from "./components/section/NavBar";
 import { MainSection } from "./components/section/MainSection";
 import AboutSection from "./components/section/AboutSection";

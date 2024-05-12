@@ -1,6 +1,3 @@
-import { Divide } from "lucide-react";
-import React from "react";
-import { BiSolidUpArrow } from "react-icons/bi";
 import { FaArrowDown, FaArrowUp } from "react-icons/fa";
 
 const HikeButton = ({ inc }: { inc: number }) => {

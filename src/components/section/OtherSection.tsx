@@ -1,4 +1,3 @@
-import React from "react";
 import { CustomCarousel } from "../CustomCarousel";
 
 const OtherSection = () => {

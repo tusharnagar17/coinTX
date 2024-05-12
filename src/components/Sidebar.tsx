@@ -1,4 +1,3 @@
-import React from "react";
 import TrendingCoins from "./TrendingCoins";
 
 const Sidebar = () => {

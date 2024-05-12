@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 const API_KEY = import.meta.env.VITE_COINGECKO;
 const API_PATH = "https://api.coingecko.com/api/v3";
@@ -32,7 +33,8 @@ export const fetchTrending = async () => {
     const data = await response.json();
 
     const coins = data.coins;
-    const exactValuesNeeded = coins.map((item: any) => ({
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const exactValuesNeeded = coins.map((item:any) => ({
       ["name"]: item.item["name"],
       ["symbol"]: item.item["symbol"],
       ["iconSmall"]: item.item["small"],

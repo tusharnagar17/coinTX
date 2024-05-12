@@ -1,5 +1,5 @@
 import Sidebar from "../Sidebar";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import HikeButton from "../HikeBtn";
 import TradingView from "../TradingView";
 import { CoinDataProps, SpecificCoinProps } from "@/types/interface";
@@ -8,7 +8,7 @@ import { fetchCoin, fetchSpecificCoin } from "@/services/fetchData";
 export const MainSection = () => {
   const [coinData, setCoinData] = useState<CoinDataProps>();
   const [loading, setLoading] = useState(true);
-  const [coin, setCoin] = useState("bitcoin");
+  const [coin] = useState("bitcoin");
   const [specificCoin, setSpecificCoinData] = useState<SpecificCoinProps>();
 
   useEffect(() => {
@@ -33,7 +33,7 @@ export const MainSection = () => {
     };
     specificCoinDetail();
     fetchData();
-  }, []);
+  }, [coin]);
   console.log("specific coin", specificCoin);
 
   if (loading) {

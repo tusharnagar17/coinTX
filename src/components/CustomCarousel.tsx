@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 import CustomCarouselItem from "./CustomCarouselItem";
 import { TrendingCoinsProps } from "@/types/interface";

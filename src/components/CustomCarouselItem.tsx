@@ -1,5 +1,4 @@
 import { TrendingCoinsProps } from "@/types/interface";
-import React from "react";
 import HikeButton from "@/components/HikeBtn";
 
 const CustomCarouselItem = ({ item }: { item: TrendingCoinsProps }) => {
