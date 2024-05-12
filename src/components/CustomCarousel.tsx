@@ -10,7 +10,6 @@ export function CustomCarousel() {
     const fetchTrendingCoins = async () => {
       try {
         const apiData = await fetchTrending();
-        // console.log("apiData",apiData)
         setCoinsData(apiData);
       } catch (error) {
         console.log("Trending Coins", error);
@@ -20,7 +19,6 @@ export function CustomCarousel() {
     fetchTrendingCoins();
   }, []);
 
-  console.log("carousel coins", coinsData);
   return (
     <div>
       <div className="md:flex flex-wrap  gap-2 justify-around">

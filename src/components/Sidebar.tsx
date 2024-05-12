@@ -15,7 +15,7 @@ const Sidebar = () => {
         </div>
 
         <div className="flex justify-center py-4 rounded full">
-          <div className="bg-white dark:bg-black px-4 py-2 font-semibold rounded-lg">
+          <div className="bg-white dark:bg-black px-1 text-wrap md:px-4 py-2 font-semibold rounded-lg">
             <a href="">Getting Started for Free &rarr;</a>
           </div>
         </div>

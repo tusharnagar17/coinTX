@@ -13,7 +13,7 @@ const HikeButton = ({ inc }: { inc: number }) => {
           : "bg-red-200 flex gap-1 items-center rounded-lg px-2 font-bold text-sm text-red-900"
       }
     >
-      {inc > 0 ? <FaArrowUp /> : <FaArrowDown />} {inc}
+      {inc > 0 ? <FaArrowUp /> : <FaArrowDown />} {inc}%
     </div>
   );
 };

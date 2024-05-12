@@ -3,8 +3,8 @@ import React from "react";
 const AboutSection = () => {
   return (
     <div className="bg-white dark:bg-gray-900 rounded-xl px-8 py-4 my-4">
-      <div className="text-xl font-bold my-4">About $bitcoin</div>
-      <div className="text-lg font-bold">What is $bitcoin ?</div>
+      <div className="text-xl font-bold my-4">About Bitcoin</div>
+      <div className="text-lg font-bold">What is Bitcoin ?</div>
       <div className="my-2 font-semibold text-md">
         Bitcoins price today is US$16,951.82, with a 24 hour trading volume of
         $19.14 B. BTC is +0.36% in the last 24 hours. It is currently 7.70% from
@@ -23,7 +23,7 @@ const AboutSection = () => {
           urna volutpat pendisse enim facilisi diam ut sed. Quam scelerisque
           fermentum sapien morbi sodales odio sed rhoncus.
         </div>
-        <div>
+        <div className="font-semibold">
           Lorem ipsum dolor sit amet consectetur. Aliquam placerat sit lobortis
           tristique pharetra. Diam id et lectus urna et tellus aliquam dictum
           at. Viverra diam suspendisse enim facilisi diam ut sed. Quam

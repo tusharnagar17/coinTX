@@ -1,10 +1,8 @@
 export interface CoinDataProps {
-  [coinName: string]: {
-    usd: number;
-    usd_24h_change: number;
-    inr: number;
-    inr_24h_change: number;
-  };
+  usd: number;
+  usd_24h_change: number;
+  inr: number;
+  inr_24h_change: number;
 }
 
 export interface TrendingCoinsProps {
@@ -15,4 +13,11 @@ export interface TrendingCoinsProps {
   priceUSD: number;
   priceChangePercentage: number;
   sparkline: string;
+}
+
+export interface SpecificCoinProps {
+  name: string;
+  symbol: string;
+  smallImage: string;
+  rank: number;
 }

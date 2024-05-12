@@ -10,6 +10,8 @@ const options = {
   },
 };
 
+//  object mapping function
+
 export const fetchCoin = async (coin: string) => {
   try {
     const response = await fetch(
@@ -50,7 +52,14 @@ export const fetchTrending = async () => {
 export const fetchSpecificCoin = async (coinName: string) => {
   try {
     const response = await fetch(`${API_PATH}/coins/${coinName}`, options);
-    console.log("specific coin", response);
+    const data = await response.json();
+    const newData = {
+      name: data.name,
+      symbol: data.symbol,
+      smallImage: data.image.small,
+      rank: data.market_cap_rank,
+    };
+    return newData;
   } catch (error) {
     console.log(error);
   }
