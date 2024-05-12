@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
     <div
       className="flex justify-between align-center px-5 md:px-12 items-center py-2 left-0 right-0 
-          shadow-md bg-white dark:bg-gray-600
+          shadow-md bg-white dark:bg-gray-900
         bg-opacity-100 backdrop-blur-lg"
     >
       <div className="text-2xl font-bold">CoinTX</div>

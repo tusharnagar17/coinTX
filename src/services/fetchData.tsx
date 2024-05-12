@@ -46,3 +46,12 @@ export const fetchTrending = async () => {
     console.log("Fetch Trending Error", error);
   }
 };
+
+export const fetchSpecificCoin = async (coinName: string) => {
+  try {
+    const response = await fetch(`${API_PATH}/coins/${coinName}`, options);
+    console.log("specific coin", response);
+  } catch (error) {
+    console.log(error);
+  }
+};

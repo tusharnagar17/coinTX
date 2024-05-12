@@ -23,8 +23,8 @@ export function CustomCarousel() {
   console.log("carousel coins", coinsData);
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-2">
-        {coinsData.map((ptr: TrendingCoinsProps, index: number) => (
+      <div className="md:flex flex-wrap  gap-2 justify-around">
+        {coinsData.slice(0, 6).map((ptr: TrendingCoinsProps, index: number) => (
           <CustomCarouselItem item={ptr} key={index} />
         ))}
       </div>

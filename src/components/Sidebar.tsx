@@ -4,7 +4,7 @@ import TrendingCoins from "./TrendingCoins";
 const Sidebar = () => {
   return (
     <div className="">
-      <div className="bg-blue-800 rounded-2xl py-10">
+      <div className="bg-blue-700 rounded-2xl py-10 m-2">
         <div className="font-semibold text-wrap text-white text-3xl text-center">
           Get Started with coinTX <br />
           for FREE
@@ -15,7 +15,7 @@ const Sidebar = () => {
         </div>
 
         <div className="flex justify-center py-4 rounded full">
-          <div className="bg-white px-4 py-2 font-semibold rounded-lg">
+          <div className="bg-white dark:bg-black px-4 py-2 font-semibold rounded-lg">
             <a href="">Getting Started for Free &rarr;</a>
           </div>
         </div>

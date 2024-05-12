@@ -22,11 +22,11 @@ const TrendingCoins = () => {
 
   console.log("Trending Coins", coinsData[0]);
   return (
-    <div className="border-2 border-black my-4 rounded-2xl py-2 px-4">
+    <div className="border-2 border-black dark:bg-gray-800 dark:border-blue-500 mx-2 md:m-4 rounded-2xl py-4 px-4">
       <div className="text-2xl font-semibold">Trending Coins (24h)</div>
       {coinsData.slice(0, 3).map((ptr: TrendingCoinsProps) => (
-        <div className="flex justify-between my-2 mx-2 items-center">
-          <img src={ptr.iconSmall} alt={ptr.name} />
+        <div className="flex justify-around my-2 mx-2 items-center">
+          <img src={ptr.iconSmall} alt={ptr.name} className="rounded-xl" />
           <div className="font-bold">{ptr.name}</div>
           <HikeButton inc={Math.round(ptr.priceChangePercentage)} />
         </div>

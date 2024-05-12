@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <div className="bg-white rounded-xl px-8 py-4 my-4">
+    <div className="bg-white dark:bg-gray-900 rounded-xl px-8 py-4 my-4">
       <div className="text-xl font-bold my-4">About $bitcoin</div>
       <div className="text-lg font-bold">What is $bitcoin ?</div>
       <div className="my-2 font-semibold text-md">
@@ -51,7 +51,10 @@ const AboutSection = () => {
                 Calculate your profits
               </div>
               <div className="mt-4">
-                <a href="" className="font-bold px-2 py-1  rounded-xl bg-white">
+                <a
+                  href=""
+                  className="font-bold px-2 py-1  rounded-xl bg-white dark:bg-gray-800"
+                >
                   {" "}
                   Check Now &rarr;
                 </a>
@@ -69,11 +72,14 @@ const AboutSection = () => {
               />
             </div>
             <div>
-              <div className="text-white font-bold text-xl">
+              <div className="text-white font-bold text-xl ">
                 Calculate your profits
               </div>
               <div className="mt-4">
-                <a href="" className="font-bold px-2 py-1  rounded-xl bg-white">
+                <a
+                  href=""
+                  className="font-bold px-2 py-1 dark:bg-gray-800 rounded-xl bg-white"
+                >
                   {" "}
                   Check Now &rarr;
                 </a>
