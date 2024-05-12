@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+
+
 module.exports = {
   darkMode: ["class"],
   content: [
@@ -6,6 +8,8 @@ module.exports = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
+    './node_modules/@material-tailwind/react/theme/**/*.{js,jsx,ts,tsx}',
+    './node_modules/@material-tailwind/react/components/**/*.{js,jsx,ts,tsx}'
   ],
   prefix: "",
   theme: {

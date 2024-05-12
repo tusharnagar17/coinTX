@@ -1,4 +1,5 @@
 import React from "react";
+import TrendingCoins from "./TrendingCoins";
 
 const Sidebar = () => {
   return (
@@ -19,16 +20,7 @@ const Sidebar = () => {
           </div>
         </div>
       </div>
-      <div className="border-2 border-black my-4 rounded-2xl py-2 px-4">
-        <div className="text-2xl font-semibold">Trending Coins ($time)</div>
-        <div className="flex justify-between my-2 mx-2">
-          <div className="flex gap-4">
-            <div>$icon</div>
-            <div className="font-bold">$name</div>
-          </div>
-          <div>$inc</div>
-        </div>
-      </div>
+      <TrendingCoins />
     </div>
   );
 };

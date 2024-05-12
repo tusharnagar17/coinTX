@@ -1,6 +1,5 @@
 import React from "react";
-import { CarouselSize } from "../Carousel";
-import CustomCarouselItem from "../CustomCarouselItem";
+import { CustomCarousel } from "../CustomCarousel";
 
 const OtherSection = () => {
   return (
@@ -8,8 +7,9 @@ const OtherSection = () => {
       <div className="ml-8 md:ml-12 text-2xl font-semibold">
         You May Also Like
       </div>
-      <div className="my-4 flex items-center justify-center">
-        <CarouselSize />
+      <div className="my-4 px-10">
+        {/* <CarouselSize /> */}
+        <CustomCarousel />
       </div>
     </div>
   );
